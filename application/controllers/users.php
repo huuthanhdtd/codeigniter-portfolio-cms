@@ -6,7 +6,7 @@ class Users extends Controller {
 	{
 		parent::Controller();
 		$this->output->enable_profiler(false);
-		$this->load->model('users_model', 'users');
+		$this->load->model('users_model');
 	}
 
 	function index()
@@ -23,7 +23,7 @@ echo $this->config->system_url();
 			$this->load->view('login_view',$data);
 			$this->load->view('bottom_v');
 		} else {
-			$data['list'] = $this->users->my_list();
+			$data['list'] = $this->users_model->my_list();
 			$this->load->view('top_v');
 			$this->load->view('users/mypage_v',$data);
 			$this->load->view('bottom_v');

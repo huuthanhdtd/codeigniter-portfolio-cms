@@ -11,26 +11,10 @@
 <link rel="stylesheet" type="text/css" href="<?=CSS_DIR?>/default.css" media="screen"/>
 <link href="<?=CSS_DIR?>/jquery-ui-1.7.2.custom.css" rel="stylesheet" type="text/css" />
 
-<script type="text/javascript" src="<?=HIGH_DIR?>/scripts/shCore.js"></script>
-<script type="text/javascript" src="<?=HIGH_DIR?>/scripts/shBrushCss.js"></script>
-<script type="text/javascript" src="<?=HIGH_DIR?>/scripts/shBrushDiff.js"></script>
-<script type="text/javascript" src="<?=HIGH_DIR?>/scripts/shBrushJScript.js"></script>
-<script type="text/javascript" src="<?=HIGH_DIR?>/scripts/shBrushPhp.js"></script>
-<script type="text/javascript" src="<?=HIGH_DIR?>/scripts/shBrushSql.js"></script>
-<script type="text/javascript" src="<?=HIGH_DIR?>/scripts/shBrushXml.js"></script>
-<script type="text/javascript" src="<?=HIGH_DIR?>/scripts/shBrushJava.js"></script>
-<link type="text/css" rel="stylesheet" href="<?=HIGH_DIR?>/styles/shCore.css"/>
-<link type="text/css" rel="stylesheet" href="<?=HIGH_DIR?>/styles/shThemeDefault.css"/>
-<script type="text/javascript">
-	SyntaxHighlighter.config.clipboardSwf = '<?=HIGH_DIR?>/scripts/clipboard.swf';
-	SyntaxHighlighter.all();
-</script>
-
 <script type="text/javascript" src="<?=JS_DIR?>/common.js"></script>
 <script type="text/javascript" src="<?= JS_DIR ?>/jquery-1.3.2.js"></script>
 <script type="text/javascript"  src="<?=JS_DIR?>/jquery-ui-1.7.2.custom.min.js"></script>
 <script type="text/javascript"  src="<?=JS_DIR?>/jquery.framedialog.js"></script>
-<script type="text/javascript" src="<?=JS_DIR?>/jquery.jScale.js"></script>
 <script type="text/javascript" src="<?= JS_DIR ?>/jquery.post.js"></script>
 <script>
 $(document).ready(function(){
@@ -48,10 +32,10 @@ $(document).ready(function(){
 function top_search_enter(form) {
     var keycode = window.event.keyCode;
     if(keycode == 13) $("#mainsearch_btn").click();
-} 
+}
 </script>
 
-<title>CodeIgniter 한국사용자포럼</title>
+<title>Portfolio</title>
 </head>
 
 <body>
