@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /
+
+	#RewriteCond %{HTTP_HOST} ^codeigniter-kr.org [NC] 
+	#RewriteRule ^(.*)$ http://www.codeigniter-kr.org/$1 [L,R=301]
+
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_URI} !^/captcha/(.*)$
+	RewriteCond %{REQUEST_URI} !^/images/(.*)$
+	RewriteCond %{REQUEST_URI} !^/include/(.*)$
+	RewriteRule ^(.*)$ index.php/$1 [L]
+</IfModule>
